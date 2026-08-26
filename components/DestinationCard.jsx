@@ -17,7 +17,6 @@ export default function DestinationCard({ destination }) {
         </div>
         <p className="mt-4 min-h-[72px] text-sm leading-6 text-slate-600">{destination.description}</p>
         <div className="mt-6 flex gap-3">
-          <Link href={`/contact?destination=${encodeURIComponent(destination.name)}`} className="focus-ring flex-1 rounded-full border border-forest px-4 py-3 text-center text-sm font-bold text-forest transition hover:bg-emerald-50">View Details</Link>
           <Link href={`/contact?destination=${encodeURIComponent(destination.name)}`} className="focus-ring flex-1 rounded-full bg-forest px-4 py-3 text-center text-sm font-bold text-white transition hover:bg-moss">Enquire</Link>
         </div>
       </div>
